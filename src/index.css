@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  user-select: none;
+  zoom: normal;
+  font-family: "Google Sans Code", monospace;
+  text-transform: capitalize;
+}
+
+.hero {
+      background: linear-gradient(135deg, #4498ed, #fd6cf3, #d18e75);
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/rust.png");
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
